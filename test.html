@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Define styles for different words */
+        .red-text {
+            color: red;
+        }
+        .blue-text {
+            color: blue;
+        }
+        .green-text {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div id="myDiv" contenteditable="true"></div>
+
+    <script>
+        // JavaScript to set the content with different colors in the content-editable div
+        document.addEventListener("DOMContentLoaded", function () {
+            var div = document.getElementById("myDiv");
+
+            // Define your text with different colors
+            var content = "This is a <span class='red-text'>red</span> word, " +
+                "a <span class='blue-text'>blue</span> word, and a " +
+                "<span class='green-text'>green</span> word.";
+
+            div.innerHTML = content;
+        });
+    </script>
+</body>
+</html>
